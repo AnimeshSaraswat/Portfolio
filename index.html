@@ -7,7 +7,10 @@
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
     <script type="text/javascript" src="js/type.js"></script>
-    <title>Animesh Saraswat | Portfolio</title>
+    <script type="text/javascript" src="js/smoothscroll.js">
+
+    </script>
+    <title>Animesh | Portfolio</title>
   </head>
   <body>
     <section class="top">
@@ -17,7 +20,7 @@
             <a href="index.html"><img src="img/logo.png"></a>
           </div>
           <ul class="nav-tabs">
-            <li><a href="index">About</a></li>
+            <li><a href="" id="click-scroll" onclick="smoothScroll(document.getElementById('about').offsetTop);return false;">About</a></li>
             <li><a href="work.html">Works</a></li>
           </ul>
         </div>
@@ -40,14 +43,14 @@
         </div>
       </div>
     </section>
-    <section class="saying-hello">
+    <section class="saying-hello" id="about">
       <div class="wrapper">
         <div class="about-me">
           <img src="img/logo.png"/>
           <h1>Hey.</h1>
           <p>
             I'm a web developer based in Bangalore, India.
-            I have a passion for web design and love to create for web and mobile devices.
+            I have a passion for web development and love to create for web and mobile devices.
           </p>
         </div>
       </div>
@@ -68,13 +71,13 @@
         <p>
           I am currently looking for jobs for <span> Web Development </span>
           in <span> Bangalore </span> city.
-          <span> Sooo... </span> Reach me if you have any work for me, or in caseyou just
+          <span> Sooo... </span> Reach me if you have any work for me, or in case you just
           wanna  say <span> Hi.!!</span>
         </p>
       </div>
     </section>
     <footer>
-      
+
     </footer>
   </body>
 </html>
