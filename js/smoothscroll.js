@@ -26,3 +26,9 @@ window.smoothScroll = (function() {
     return timer;
   }
 })();
+
+
+window.addEventListener('mousewheel', function(e){
+  wDelta = e.wheelDelta < 0 ? 'down' : 'up';
+  console.log(wDelta);
+});

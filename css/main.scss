@@ -4,6 +4,7 @@ $color-light-grey: #eee;
 $txt-color-yellow: #ffed00;
 $bg-color : #abd5ce;
 $footer-color: #C5DED7;
+$color-white: #fff;
 /* css documentation */
 * {
   box-sizing: border-box;
@@ -81,7 +82,7 @@ h1 {
     position: relative;
 
     .wrapper {
-      color: #eee;
+      color: $color-light-grey;
       text-align: center;
 
       .textChanger {
@@ -236,8 +237,152 @@ h1 {
     }
   }
 }
+.projects {
+  padding: 3.5em 0px;
+  img {
+    width: 100%;
+  }
+  h1 {
+    font-size: 2.5em;
+    font-weight: 600;
+  }
+  p {
+    font-size: 1.5em;
+  }
+  span {
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.4em;
+  }
+  a {
+    text-decoration: none;
+    padding: 0.75em 2em;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+    font-size: 0.8em;
+    cursor: pointer;
+  }
+  .btn {
+    padding: 20px 0px;
+    margin: 0;
+  }
+}
+.project-one {
+  background: #21364B;
+  .project-description {
+    h1 {
+      color: #a7e0f3;
+      margin-bottom: 0px;
+    }
+    p {
+      color: #869bb0;
+      a {
+        color: #8c6c07;
+        background: #fae298;
+      }
+      a:hover {
+        background: #f8d467;
+      }
+    }
+    h2 {
+      color: $color-light-grey;
+    }
+    span {
+      color: #eee;
+    }
+  }
+}
+.project-two {
+  background: #FA6D68;
+  img {
+    box-shadow: 0px 2px 20px -3px;
+  }
+  h1,p{
+    color:$color-white;
+  }
+  h2 {
+    color: #FDBFBD;
+  }
+  a {
+    background: #f9554f;
+    color: #c30d06;
+  }
+  a:hover {
+    background: #f83d37;
+  }
+}
+.project-three {
+  background: #215a75;
+  img {
+    box-shadow: 0px 2px 20px -3px;
+  }
+  h1,p{
+    color: $color-light-grey;
+  }
+  h2 {
+    color: #D4FAF6;
+  }
+  a {
+    background: #5d8986;
+    color: $color-light-grey;
+  }
+  a:hover {
+    background: #527a77;
+  }
+}
+.project-four {
+  background: #31355b;
+  img {
+    box-shadow: 0px 2px 20px -3px;
+  }
+  h1,p{
+    color: $color-light-grey;
+  }
+  h2 {
+    color: #a98dd7;
+  }
+  a {
+    background: #a98dd7;
+    color: $color-light-grey;
+  }
+  a:hover {
+    background: #9176bd;
+  }
+}
+.project-five {
+  background: #69b0a5;
+  img {
+    box-shadow: 0px 2px 20px -3px;
+  }
+  h1,p{
+    color: $color-light-grey;
+  }
+  h2 {
+    color: #bfd0e6;
+  }
+  a {
+    background: #b0c4de;
+    color: $color-light-grey;
+  }
+  a:hover {
+    background: #95aece;
+  }
+}
 
 footer {
   height: 350px;
   background: $footer-color;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+  .projects {
+    a {
+      padding: 0.75em 8em;
+    }
+    h1 {
+      font-size: 2.0em;
+    }
+    p {
+      font-size: 1.2em;
+    }
+  }
 }
