@@ -29,6 +29,12 @@ window.smoothScroll = (function() {
 
 
 window.addEventListener('mousewheel', function(e){
+  var head = document.getElementById('header');
   wDelta = e.wheelDelta < 0 ? 'down' : 'up';
-  console.log(wDelta);
+  if (wDelta == 'down') {
+    head.classList.add('head--pinned');
+  }
+  else {
+    head.classList.remove('head--pinned');
+  }
 });
