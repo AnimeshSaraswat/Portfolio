@@ -153,6 +153,10 @@ h1 {
       p {
         font-size: 20px;
         color: #545454;
+        span {
+          font-family: 'Amatic SC', cursive;
+          font-size: 30px;
+        }
       }
     }
   }
@@ -269,7 +273,7 @@ h1 {
   }
   span {
     font-family: 'Amatic SC', cursive;
-    font-size: 1.4em;
+    font-size: 1.2em;
   }
   a {
     text-decoration: none;
