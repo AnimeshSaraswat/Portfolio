@@ -5,6 +5,7 @@ $txt-color-yellow: #ffed00;
 $bg-color : #abd5ce;
 $footer-color: #C5DED7;
 $color-white: #fff;
+
 /* css documentation */
 * {
   box-sizing: border-box;
@@ -16,6 +17,153 @@ body, html {
   width: 100%;
   font-family: 'Josefin Sans', sans-serif;
 }
+
+@-webkit-keyframes zoomInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(.1, .1, .1) translate3d(0, -1500px, 0);
+    transform: scale3d(.1, .1, .1) translate3d(0, -1500px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+    transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+  }
+}
+
+@keyframes zoomInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(.1, .1, .1) translate3d(0, -1500px, 0);
+    transform: scale3d(.1, .1, .1) translate3d(0, -1500px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+    transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+  }
+}
+
+@-webkit-keyframes zoomInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(.1, .1, .1) translate3d(-2000px, 0, 0);
+    transform: scale3d(.1, .1, .1) translate3d(-2000px, 0, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
+    transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+  }
+}
+
+@keyframes zoomInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(.1, .1, .1) translate3d(-2000px, 0, 0);
+    transform: scale3d(.1, .1, .1) translate3d(-2000px, 0, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
+    transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+  }
+}
+
+@-webkit-keyframes zoomInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(.1, .1, .1) translate3d(2000px, 0, 0);
+    transform: scale3d(.1, .1, .1) translate3d(2000px, 0, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
+    transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+  }
+}
+
+@keyframes zoomInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(.1, .1, .1) translate3d(2000px, 0, 0);
+    transform: scale3d(.1, .1, .1) translate3d(2000px, 0, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
+    transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+  }
+}
+
+@-webkit-keyframes zoomInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);
+    transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
+    transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+  }
+}
+
+@keyframes zoomInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);
+    transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
+    transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+  }
+}
+
+
+
 h1 {
   font-weight: 100;
 }
@@ -393,7 +541,129 @@ h1 {
 footer {
   position: relative;
   height: 350px;
+  overflow: hidden;
   background: $footer-color;
+  .footer {
+    width: 60%;
+    margin: 0 auto;
+    overflow: hidden;
+
+    .icon-animation-area {
+      .social-media-icon {
+        width: 95px;
+        height: 95px;
+        border-radius: 50%;
+        position: absolute;
+        background-color: #EA4335;
+        border: 3px solid #eee;
+        .fa {
+          font-size: 65px;
+          position: absolute;
+          color: #fff;
+        }
+      }
+      .zoomInRight {
+        -webkit-animation-name: zoomInRight;
+        animation-name: zoomInRight;
+        animation-duration: 5s;
+      }
+      .zoomInUp {
+        -webkit-animation-name: zoomInUp;
+        animation-name: zoomInUp;
+        animation-duration: 2s;
+      }
+      .zoomInDown {
+        -webkit-animation-name: zoomInDown;
+        animation-name: zoomInDown;
+        animation-duration: 4s;
+      }
+      .zoomInLeft {
+        -webkit-animation-name: zoomInLeft;
+        animation-name: zoomInLeft;
+        animation-duration: 3s;
+      }
+      .github-animation {
+        top: 125px;
+        left: 500px;
+        .fa {
+          left: 14px;
+          top: 8px;
+        }
+      }
+      .linkedin-animation {
+        top: 50px;
+        left: 400px;
+        .fa {
+          left: 17px;
+          top: 8px;
+        }
+      }
+      .facebook-animation {
+        top: 125px;
+        left: 300px;
+        .fa {
+          top: 12px;
+          left: 22px;
+        }
+      }
+      .gmail-animation {
+        top: 200px;
+        left: 400px;
+        .fa {
+          top: 9px;
+          left: 12px;
+        }
+      }
+    }
+
+    .contact-form {
+      height: 275px;
+      width: 45%;
+      padding: 20px;
+      float: right;
+      background: #fff;
+      margin: 40px 0px;
+      text-align: center;
+
+      .form-styling {
+        border: none;
+        font-size: 16px;
+        width: 90%;
+        height: 40px;
+        margin-bottom: 10px;
+        border-bottom: 2px solid #bbb;
+      }
+      .form-styling:nth-child(2) {
+        margin-bottom: 15px;
+      }
+      .form-styling:nth-child(3) {
+        height: 90px;
+        resize: none;
+      }
+      .form-styling:focus {
+        outline: none;
+      }
+      button {
+        margin-top: 2px;
+        margin-right: 16px;
+        float: right;
+        padding: 8px 20px;
+        border: none;
+        font-weight: 600;
+        color: #777;
+        background: #abd5ce;
+        transition: all 0.5s ease-in-out;
+        cursor: pointer;
+      }
+      button:focus {
+        outline: none;
+      }
+      button:hover {
+        color: $color-light-grey;
+        background: #6e9ad0;
+      }
+    }
+  }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 1024px) {

@@ -25,6 +25,18 @@ window.smoothScroll = (function() {
     timer = setInterval(step, 10);
     return timer;
   }
+  var something = (function() {
+    var executed = false;
+    return function () {
+      if (!executed && window.pageYOffset > 2070) {
+        executed = true;
+        document.getElementById('linkedin').classList.add('zoomInUp');
+        document.getElementById('github').classList.add('zoomInLeft');
+        document.getElementById('gmail').classList.add('zoomInDown');
+        document.getElementById('facebook').classList.add('zoomInRight');
+      }
+    };
+  })();
 })();
 
 
