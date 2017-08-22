@@ -1,8 +1,6 @@
 $(document).scroll(function () {
     var y = $(this).scrollTop();
-    console.log(y);
-    console.log($(document).height());
-    if (y > ($(document).height() - 850)) {
+    if (y > ($(document).height() - 1100)) {
         $('#linkedin').addClass('zoomInUp');
         $('#github').addClass('zoomInLeft');
         $('#gmail').addClass('zoomInDown');
